@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.background:nth-child(1), .background:nth-child(3) {
+  height: 90vh;
+}
+
+.background:nth-child(2) {
+  height: 100vh;
+}
+
+.background:nth-child(4) {
+  height: 60vh;
+}
+
+.background:nth-child(1) video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.background:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.background:nth-child(2) .sub_background {
+  height: 50%;
+  width: 100%;
+  background-image: url(../media/backgrounds/beans-coffee-morning-espresso-9186.jpg);
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.background:nth-child(2) .sub_background .sub_background2 {
+  width: 80%;
+  height: 25%;
+  background-color: #f5edda;
+}
+
+.background:nth-child(3) {
+  background-color: #f5edda;
+}
+/*# sourceMappingURL=main.css.map */

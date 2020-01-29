@@ -1,0 +1,10 @@
+//All css gets compiled here
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import 'mixins';
+@import 'colors';
+@import 'backgrounds';
