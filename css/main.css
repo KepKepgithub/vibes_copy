@@ -15,6 +15,7 @@
 
 .background:nth-child(4) {
   height: 60vh;
+  background-color: black;
 }
 
 .background:nth-child(1) video {
@@ -66,5 +67,16 @@
 
 .background:nth-child(3) {
   background-color: #f5edda;
+}
+
+.grid_container {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 340vh;
+  display: -ms-grid;
+  display: grid;
 }
 /*# sourceMappingURL=main.css.map */
