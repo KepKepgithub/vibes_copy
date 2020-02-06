@@ -134,4 +134,39 @@ nav p {
   text-transform: uppercase;
   font-weight: bold;
 }
+
+.title {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 12%;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.title h1 {
+  font-size: 4rem;
+  letter-spacing: .3rem;
+}
+
+.title p {
+  letter-spacing: .1rem;
+}
 /*# sourceMappingURL=main.css.map */

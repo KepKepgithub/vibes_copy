@@ -1,0 +1,19 @@
+.title{
+    grid-area: title;
+
+    @include center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-top: 12%;
+
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    h1{
+        font-size: 4rem;
+        letter-spacing: .3rem;
+    }
+    p{
+        letter-spacing: .1rem;
+    }
+}
