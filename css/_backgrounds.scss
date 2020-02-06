@@ -7,7 +7,7 @@
 }
 .background:nth-child(4){
     height: 60vh;
-    background-color: black;
+    background-color: white;
 }
 
 //video for the first section
@@ -27,6 +27,7 @@
         width: 100%;
         background-image: url(../media/backgrounds/beans-coffee-morning-espresso-9186.jpg);
         background-position: center;
+        overflow: hidden;
 
         //this flex is just to position the second background into the needed position
         @include center;

@@ -1,0 +1,33 @@
+nav{
+    grid-area: nav;
+
+    background-color: $txt;
+    @include center;
+    justify-content: flex-end;
+    padding-right: 3rem;
+    .burger{
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        opacity: 0.3;
+        margin-right: 1rem;
+
+        position: relative;
+        &::before,&::after{
+            content: "";
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            background-color: inherit;
+            top: -6px;
+        }
+        &::after{
+            top:6px;
+        }
+    }
+    p{
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}

@@ -3,6 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scrollbar-width: none;
 }
 
 .background:nth-child(1), .background:nth-child(3) {
@@ -15,7 +16,7 @@
 
 .background:nth-child(4) {
   height: 60vh;
-  background-color: black;
+  background-color: white;
 }
 
 .background:nth-child(1) video {
@@ -45,6 +46,7 @@
   width: 100%;
   background-image: url(../media/backgrounds/beans-coffee-morning-espresso-9186.jpg);
   background-position: center;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,10 +75,63 @@
   position: absolute;
   z-index: 10;
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 100vw;
   height: 340vh;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 9% 7% 61.5% 22.5%;
+      grid-template-columns: 9% 7% 61.5% 22.5%;
+  -ms-grid-rows: 1.96% 19.63% 13.4% 5% 15.83% 5% 16.2% 9.86% 7.06% 6.26%;
+      grid-template-rows: 1.96% 19.63% 13.4% 5% 15.83% 5% 16.2% 9.86% 7.06% 6.26%;
+      grid-template-areas: "   nav nav        .            ." "   . title        title        play_btn" "   . coffee_types coffee_types coffee_types" "   . .            .            ." "   . explore      explore      explore" "   . .            .            ." "   . choose       choose       choose" "   . gallery      gallery      gallery" "   . info         info         info" "   . footer       footer       .";
+}
+
+nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+  background-color: #181818;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 3rem;
+}
+
+nav .burger {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  opacity: 0.3;
+  margin-right: 1rem;
+  position: relative;
+}
+
+nav .burger::before, nav .burger::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  top: -6px;
+}
+
+nav .burger::after {
+  top: 6px;
+}
+
+nav p {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="./svg_injector.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -23,8 +24,17 @@
     <div class="grid_container">
         <nav>
             <div class="burger"></div>
-            <p>MENU</p>
+            <p>menu</p>
         </nav>
+        <section class="title">
+            <h1>Coffee vibes</h1>
+            <p>Share your favorite coffee or find inspiration for taste</p>
+        </section>
+        <section class="play_btn">
+            <img src="./svg/play_btn.svg" onload="SVGInject(this)"/>
+            <p>watch</p>
+            <p>story video</p>
+        </section>
     </div>
 </body>
 </html>
