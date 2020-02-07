@@ -19,8 +19,9 @@
         content: "JUST FIND YOURS" url(../svg/search.svg);
         color: white;
         letter-spacing: .1rem;
-        @include center;
+        display: flex;
         justify-content: space-around;
+        align-items: center;
 
         width: 25%;
         height: 13%;
