@@ -3,11 +3,12 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  scrollbar-width: none;
+  scrollbar-width: thin;
 }
 
 .background:nth-child(1), .background:nth-child(3) {
   height: 90vh;
+  overflow: hidden;
 }
 
 .background:nth-child(2) {
@@ -75,7 +76,7 @@
   position: absolute;
   z-index: 10;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 340vh;
   display: -ms-grid;
   display: grid;
@@ -83,7 +84,7 @@
       grid-template-columns: 9% 7% 61.5% 22.5%;
   -ms-grid-rows: 1.96% 19.63% 13.4% 5% 15.83% 5% 16.2% 9.86% 7.06% 6.26%;
       grid-template-rows: 1.96% 19.63% 13.4% 5% 15.83% 5% 16.2% 9.86% 7.06% 6.26%;
-      grid-template-areas: "   nav nav        .            ." "   . title        title        play_btn" "   . coffee_types coffee_types coffee_types" "   . .            .            ." "   . explore      explore      explore" "   . .            .            ." "   . choose       choose       choose" "   . gallery      gallery      gallery" "   . info         info         info" "   . footer       footer       .";
+      grid-template-areas: "   nav nav        .            .           " "   . title        title        play_btn    " "   . coffee_types coffee_types coffee_types" "   . .            .            .           " "   . explore      explore      explore     " "   . .            .            .           " "   . choose       choose       choose      " "   . gallery      gallery      gallery     " "   . info         info         info        " "   . footer       footer       .           ";
 }
 
 nav {
@@ -156,7 +157,7 @@ nav p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 30%;
+  margin-top: 15%;
   color: white;
   text-shadow: 1px 1px 1px black;
 }
@@ -196,6 +197,7 @@ nav p {
   cursor: pointer;
   -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
           filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  margin-top: -12rem;
 }
 
 .play_btn p {
@@ -214,5 +216,73 @@ nav p {
 .play_btn p span {
   font-size: 1rem;
   letter-spacing: .1rem;
+}
+
+.coffee_types {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: coffee_types;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+.coffee_types img {
+  width: 25%;
+  height: 100%;
+}
+
+.coffee_types::before {
+  position: absolute;
+  content: "JUST FIND YOURS" url(../svg/search.svg);
+  color: white;
+  letter-spacing: .1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 25%;
+  height: 13%;
+  background-color: #181818;
+  top: -13%;
+  cursor: pointer;
+}
+
+.coffee_types::after {
+  position: absolute;
+  content: url(../svg/share.svg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #181818;
+  width: 3.5%;
+  height: 13%;
+  top: -13%;
+  right: 10%;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

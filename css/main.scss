@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    scrollbar-width: none;
+    scrollbar-width: thin;
 }
 
 @import 'mixins';
@@ -13,3 +13,4 @@
 @import "nav";
 @import "title";
 @import "play_btn";
+@import "coffee_types";

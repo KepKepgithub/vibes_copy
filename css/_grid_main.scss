@@ -3,21 +3,21 @@
     position: absolute;
     z-index: 10;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 340vh;
 
     display: grid;
     grid-template-columns: 9% 7% 61.5% 22.5%;
     grid-template-rows: 1.96% 19.63% 13.4% 5% 15.83% 5% 16.2% 9.86% 7.06% 6.26%;
     grid-template-areas: 
-    "   nav nav        .            ."
-    "   . title        title        play_btn"
+    "   nav nav        .            .           "
+    "   . title        title        play_btn    "
     "   . coffee_types coffee_types coffee_types"
-    "   . .            .            ."
-    "   . explore      explore      explore"
-    "   . .            .            ."
-    "   . choose       choose       choose"
-    "   . gallery      gallery      gallery"
-    "   . info         info         info"
-    "   . footer       footer       ."
+    "   . .            .            .           "
+    "   . explore      explore      explore     "
+    "   . .            .            .           "
+    "   . choose       choose       choose      "
+    "   . gallery      gallery      gallery     "
+    "   . info         info         info        "
+    "   . footer       footer       .           "
 }

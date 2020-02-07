@@ -1,6 +1,7 @@
 //define the sizes of each section
 .background:nth-child(1),.background:nth-child(3){
     height: 90vh;
+    overflow: hidden;
 }
 .background:nth-child(2){
     height: 100vh;

@@ -10,6 +10,8 @@
         width: $svg_size;
         cursor: pointer;
         filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+        // Just centers it a bit better.
+        margin-top: -12rem;
     }
     p{
         transform: rotate(90deg);
