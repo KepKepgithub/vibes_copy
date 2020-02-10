@@ -243,29 +243,12 @@ nav p {
   height: 100%;
 }
 
-.coffee_types::before {
+.coffee_types .search_bar {
   position: absolute;
-  content: "JUST FIND YOURS" url(../svg/search.svg);
-  color: white;
-  letter-spacing: .1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 25%;
   height: 13%;
-  background-color: #181818;
+  width: 25%;
   top: -13%;
-  cursor: pointer;
-}
-
-.coffee_types::after {
-  position: absolute;
-  content: url(../svg/share.svg);
+  background-color: #181818;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,11 +258,177 @@ nav p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #181818;
-  width: 3.5%;
-  height: 13%;
-  top: -13%;
-  right: 10%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   cursor: pointer;
+}
+
+.coffee_types .search_bar p {
+  text-transform: uppercase;
+  color: white;
+}
+
+.coffee_types .share_btn {
+  position: absolute;
+  height: 13%;
+  width: 3.5%;
+  background-color: #181818;
+  top: -13%;
+  right: 9.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.explore {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: explore;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #181818;
+}
+
+.explore img {
+  width: 50%;
+  height: 100.4%;
+}
+
+.explore article {
+  background-color: white;
+  width: 39.05%;
+  height: 80%;
+  padding: 0% 5% 0% 5%;
+  position: relative;
+}
+
+.explore article p:nth-child(5) {
+  color: gray;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.explore article h3 {
+  text-transform: uppercase;
+  color: gray;
+  font-size: .8rem;
+  margin-bottom: 1.5rem;
+}
+
+.explore article h1 {
+  font-size: 2rem;
+  letter-spacing: .15rem;
+  margin-bottom: 1.5rem;
+}
+
+.explore article .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.explore article .rating p {
+  font-weight: bold;
+  padding-left: .5rem;
+}
+
+.explore article .rating .rating_bar1 {
+  background-color: #c9c9c9;
+  width: 40%;
+  position: relative;
+}
+
+.explore article .rating .rating_bar1 .rating_bar2 {
+  position: absolute;
+  background-color: black;
+  width: 70%;
+  height: 100%;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: .75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.explore article .prices_places {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.explore article .prices_places svg {
+  margin-right: .5rem;
+}
+
+.explore article .prices_places p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+}
+
+.explore article .prices_places .prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2rem;
+}
+
+.explore article .prices_places .places {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.explore article .discover_btn {
+  position: absolute;
+  background-color: #181818;
+  width: 40%;
+  height: 15%;
+  bottom: -7.5%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.explore article .discover_btn p {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -13,32 +13,35 @@
         width: 25%;
         height: 100%;
     }
-    // search bar
-    &::before{
+    .search_bar{
         position: absolute;
-        content: "JUST FIND YOURS" url(../svg/search.svg);
-        color: white;
-        letter-spacing: .1rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
+        height: 13%;
         width: 25%;
-        height: 13%;
-        background-color: $txt;
         top: -13%;
-        cursor: pointer;
-    }
-    //share button
-    &::after{
-        position: absolute;
-        content: url(../svg/share.svg);
-        @include center;
         background-color: $txt;
-        width: 3.5%;
+
+        @include center;
+        justify-content: space-around;
+
+        cursor: pointer;
+
+        p{
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+    .share_btn{
+        position: absolute;
+
         height: 13%;
-        top:-13%;
-        right: 10%;
+        width:3.5%;
+        background-color: $txt;
+
+        top: -13%;
+        right: 9.5%;
+
+        @include center;
+
         cursor: pointer;
     }
 }
