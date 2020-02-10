@@ -516,4 +516,51 @@ nav p {
 .choose .sub_types span h1 {
   margin-bottom: 1rem;
 }
+
+.gallery {
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: gallery;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 12%;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.gallery img {
+  width: 20%;
+  height: 87%;
+}
+
+.gallery .instagram_btn {
+  position: absolute;
+  bottom: 0%;
+  right: 12%;
+  height: 13%;
+  width: 17.5%;
+  background-color: #181818;
+  color: white;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=main.css.map */

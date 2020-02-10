@@ -1,0 +1,27 @@
+.gallery{
+    grid-area: gallery;
+    position: relative;
+    display: flex;
+    padding-right: 12%;
+    @include center;
+    align-items: flex-start;
+
+    img{
+        width: 20%;
+        height: 87%;
+    }
+    
+    .instagram_btn{
+    position: absolute;
+    bottom: 0%;
+    right: 12%;
+
+    height: 13%;
+    width: 17.5%;
+    background-color: $txt;
+    color: white;
+    text-transform: uppercase;
+
+    @include center;
+    }
+}
