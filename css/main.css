@@ -431,4 +431,89 @@ nav p {
   text-transform: uppercase;
   font-size: 1.3rem;
 }
+
+.choose {
+  -ms-grid-row: 7;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: choose;
+  padding-right: 12%;
+}
+
+.choose h3 {
+  color: gray;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.choose h1 {
+  font-size: 2rem;
+  letter-spacing: .12rem;
+  margin-bottom: 2rem;
+}
+
+.choose .main_types {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.choose .main_types h1:nth-child(1) {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  color: black;
+}
+
+.choose .main_types h1 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  color: gray;
+}
+
+.choose .main_types::before, .choose .main_types::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  background-color: gray;
+}
+
+.choose .main_types::after {
+  height: 0.2rem;
+  background-color: black;
+  width: 10%;
+}
+
+.choose .sub_types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.choose .sub_types span {
+  width: 25%;
+  padding-right: 5%;
+  margin-bottom: 3rem;
+}
+
+.choose .sub_types span h1 {
+  margin-bottom: 1rem;
+}
 /*# sourceMappingURL=main.css.map */

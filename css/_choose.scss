@@ -1,0 +1,63 @@
+.choose{
+    grid-area: choose;
+
+    padding-right: 12%;
+    h3{
+        color: gray;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-size: 0.8rem;
+
+        margin-bottom: 1rem;
+    }
+
+    h1{
+        font-size: 2rem;
+        letter-spacing: .12rem;
+
+        margin-bottom: 2rem;
+    }
+    .main_types{
+        width: 100%;
+        @include center;
+        justify-content: space-between;
+
+        position: relative;
+        h1:nth-child(1){
+            text-transform: uppercase;
+            font-size: 1rem;
+            margin-bottom: 3rem;
+            color: black;
+        }
+        h1{
+            text-transform: uppercase;
+            font-size: 1rem;
+            margin-bottom: 3rem;
+            color: gray;
+        }
+        &::before,&::after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0.1rem;
+            background-color: gray;
+        }
+        &::after{
+            height: 0.2rem;
+            background-color: black;
+            width: 10%;
+        }
+    }
+    .sub_types{
+        display: flex;
+        flex-wrap: wrap;
+        span{
+            width:25%;
+            padding-right: 5%;
+            margin-bottom: 3rem;
+            h1{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
