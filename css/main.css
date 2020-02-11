@@ -546,9 +546,9 @@ nav p {
 
 .gallery .instagram_btn {
   position: absolute;
-  bottom: 0%;
+  bottom: -7%;
   right: 12%;
-  height: 13%;
+  height: 20%;
   width: 17.5%;
   background-color: #181818;
   color: white;
@@ -562,5 +562,77 @@ nav p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.info {
+  -ms-grid-row: 9;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: info;
+  padding-right: 24%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5rem;
+}
+
+.info aside {
+  width: 25%;
+}
+
+.info aside :nth-child(1) {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+.info aside p {
+  line-height: 1.7rem;
+  color: gray;
+}
+
+.info .contact_info p:nth-child(3) {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.info .contact_info .social_media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 50%;
+  fill: gray;
+}
+
+footer {
+  -ms-grid-row: 10;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer svg {
+  fill: gray;
+}
+
+footer p {
+  color: gray;
+  margin-left: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

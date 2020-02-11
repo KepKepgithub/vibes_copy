@@ -1,0 +1,36 @@
+.info{
+    grid-area: info;
+
+    padding-right: 24%;
+    display: flex;
+    padding-top: 5rem;
+
+    aside{
+        width: 25%;
+        //first row of every column(about, our services quick links contacts)
+        :nth-child(1){
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+        }
+        //rest of text
+        p{
+            line-height: 1.7rem;
+            color: gray;
+        }
+    }
+    .contact_info{
+        //the email
+        p:nth-child(3){
+            color: black;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .social_media{
+            @include center;
+            justify-content: space-between;
+            margin-right: 50%;
+            fill: gray;
+        }
+    }
+}

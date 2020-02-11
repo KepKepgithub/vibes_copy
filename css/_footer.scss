@@ -1,0 +1,14 @@
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+
+    svg{
+        fill: gray;
+    }
+
+    p{
+        color: gray;
+        margin-left: 1rem;
+    }
+}
